@@ -7,3 +7,57 @@ Marrom esverdeado: #464230
 Marrom claro: #9B9578
 black and white
 */
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top, #464230, #EFDB69 );
+}
+
+
+body, html {
+    background-color: #efdb69;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /*Para centralizar no meio alem das conf position, caso contrario centralizara a ponta superior no centro*/
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden; /*Tudo que estiver fora da borda criada ele corta (imagem)*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+
+    transition: width 1s, height .3s; /*Animacao alteracoes multi-telas*/
+    transition-timing-function: ease; /* Suavizaçao da animacao*/
+}
+
+section#login > div#imagem {
+    display: block;
+    background:#efdb69 url(../imagens/pexels-psco-137077.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    }
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
