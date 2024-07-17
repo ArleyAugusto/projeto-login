@@ -41,7 +41,7 @@ section#login {
     transform: translate(-50%,-50%); /*Para centralizar no meio alem das conf position, caso contrario centralizara a ponta superior no centro*/
     background-color: white;
     width: 250px;
-    height: 400px;
+    height: 450px;
     border-radius: 20px;
     overflow: hidden; /*Tudo que estiver fora da borda criada ele corta (imagem)*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
@@ -60,4 +60,14 @@ section#login > div#imagem {
 section#login > div#formulario {
     display: block;
     padding: 10px;
+}
+
+div#formulario {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+div#formulario > p {
+    font-size: 1em;
 }
