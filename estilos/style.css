@@ -41,7 +41,7 @@ section#login {
     transform: translate(-50%,-50%); /*Para centralizar no meio alem das conf position, caso contrario centralizara a ponta superior no centro*/
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 400px;
     border-radius: 20px;
     overflow: hidden; /*Tudo que estiver fora da borda criada ele corta (imagem)*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
