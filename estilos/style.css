@@ -38,16 +38,15 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%); /*Para centralizar no meio alem das conf position, caso contrario centralizara a ponta superior no centro*/
     background-color: white;
-    width: 250px;
-    height: 450px;
+    width: 280px;
+    height: 490px;
     border-radius: 20px;
     overflow: hidden; /*Tudo que estiver fora da borda criada ele corta (imagem)*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
-
     transition: width 1s, height .3s; /*Animacao alteracoes multi-telas*/
     transition-timing-function: ease; /* Suavizaçao da animacao*/
+    transform: translate(-50%,-50%); /*Para centralizar no meio alem das conf position, caso contrario centralizara a ponta superior no centro*/
 }
 
 section#login > div#imagem {
@@ -71,3 +70,79 @@ div#formulario {
 div#formulario > p {
     font-size: 1em;
 }
+
+form > div.campo {
+    background-color: #464230f5;
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-radius: 8px;
+    margin: 5px 0px;
+   
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color: white ;
+    font-size: 1.4em;
+    width: 39px;
+    padding: 5px;
+    
+}
+
+div.campo > input {
+   font-size: 1em;
+   width: calc(100% - 44px);
+   height: 100%;
+   border-radius:0px;
+   padding: 4px;
+   border: 0px; 
+   background-color: #e9e7df;
+   transform: translateY(-3px);
+   
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+form >input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 32px;
+    background-color: #9B9578;
+    color: white; 
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
+
+form >input[type=submit]:hover {
+    background-color: #464230 ;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    padding-top: 2px;
+    margin-top: 2px;
+    height: 30px;
+    background-color: #9B9578;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+   
+
+}
+
+form > a.botao:hover {
+    background-color: #464230 ;
+}
+
